@@ -1,0 +1,75 @@
+[    0.000000] ***[MYSCHED] Mysched class is online 
+[    0.000000] ***[MYSCHED] Mysched class is online 
+[    0.000000] ***[MYSCHED] Mysched class is online 
+[    0.000000] ***[MYSCHED] Mysched class is online 
+[   68.772120] ***[MYSCHED] enqueue: success cpu=1, nr_running=1, pid=1879
+[   68.772275] 	***[MYSCHED] put_prev_task: do nothing, p->pid=1879
+[   68.773640] ***[MYSCHED] enqueue: success cpu=1, nr_running=2, pid=1877
+[   68.774287] 	***[MYSCHED] put_prev_task: do nothing, p->pid=1877
+[   68.775349] ***[MYSCHED] enqueue: success cpu=1, nr_running=3, pid=1878
+[   68.775354] 	***[MYSCHED] put_prev_task: do nothing, p->pid=1878
+[   68.775400] ***[MYSCHED] enqueue: success cpu=1, nr_running=4, pid=1880
+[   68.775442] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1880, next_p->pid=1879, 					nr_running=4
+[   68.775473] 	***[MYSCHED] dequeue: success cpu=1, nr_running=3, pid=1879
+[   68.775482] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1879, next_p->pid=1877, 					nr_running=3
+[   68.775510] 	***[MYSCHED] dequeue: success cpu=1, nr_running=2, pid=1877
+[   68.775514] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1877, next_p->pid=1878, 					nr_running=2
+[   68.775542] 	***[MYSCHED] dequeue: success cpu=1, nr_running=1, pid=1878
+[   68.775544] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1878, next_p->pid=1880, 					nr_running=1
+[   68.775584] 	***[MYSCHED] dequeue: success cpu=1, nr_running=0, pid=1880
+[   68.775586] 	***[MYSCHED] put_prev_task: do nothing, p->pid=1880
+[   69.774402] ***[MYSCHED] enqueue: success cpu=1, nr_running=1, pid=1879
+[   69.774467] ***[MYSCHED] enqueue: success cpu=1, nr_running=2, pid=1877
+[   69.774492] ***[MYSCHED] enqueue: success cpu=1, nr_running=3, pid=1878
+[   69.774505] ***[MYSCHED] enqueue: success cpu=1, nr_running=4, pid=1880
+[   69.774692] ***[MYSCHED] pick_next_task: other class came in..						  prev->pid=0
+[   69.774705] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1879, 					nr_running=4
+[   69.774823] 	***[MYSCHED] dequeue: success cpu=1, nr_running=3, pid=1879
+[   69.774849] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1879, next_p->pid=1877, 					nr_running=3
+[   69.775036] 	***[MYSCHED] dequeue: success cpu=1, nr_running=2, pid=1877
+[   69.775072] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1877, next_p->pid=1878, 					nr_running=2
+[   69.775180] 	***[MYSCHED] dequeue: success cpu=1, nr_running=1, pid=1878
+[   69.775212] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1878, next_p->pid=1880, 					nr_running=1
+[   69.775405] 	***[MYSCHED] dequeue: success cpu=1, nr_running=0, pid=1880
+[   69.775416] 	***[MYSCHED] put_prev_task: do nothing, p->pid=1880
+[   70.773878] ***[MYSCHED] enqueue: success cpu=1, nr_running=1, pid=1879
+[   70.774026] ***[MYSCHED] enqueue: success cpu=1, nr_running=2, pid=1877
+[   70.774158] ***[MYSCHED] enqueue: success cpu=1, nr_running=3, pid=1878
+[   70.774241] ***[MYSCHED] enqueue: success cpu=1, nr_running=4, pid=1880
+[   72.052916] ***[MYSCHED] pick_next_task: other class came in..						  prev->pid=0
+[   72.052931] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1879, 					nr_running=4
+[   72.053044] 	***[MYSCHED] dequeue: success cpu=1, nr_running=3, pid=1879
+[   72.053055] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1879, next_p->pid=1877, 					nr_running=3
+[   72.053159] 	***[MYSCHED] dequeue: success cpu=1, nr_running=2, pid=1877
+[   72.053170] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1877, next_p->pid=1878, 					nr_running=2
+[   72.053315] 	***[MYSCHED] dequeue: success cpu=1, nr_running=1, pid=1878
+[   72.053325] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1878, next_p->pid=1880, 					nr_running=1
+[   72.053430] 	***[MYSCHED] dequeue: success cpu=1, nr_running=0, pid=1880
+[   72.053440] 	***[MYSCHED] put_prev_task: do nothing, p->pid=1880
+[   73.052071] ***[MYSCHED] enqueue: success cpu=1, nr_running=1, pid=1879
+[   73.052129] ***[MYSCHED] enqueue: success cpu=1, nr_running=2, pid=1877
+[   73.052290] ***[MYSCHED] enqueue: success cpu=1, nr_running=3, pid=1878
+[   73.052401] ***[MYSCHED] enqueue: success cpu=1, nr_running=4, pid=1880
+[   74.049844] ***[MYSCHED] pick_next_task: other class came in..						  prev->pid=0
+[   74.049859] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1879, 					nr_running=4
+[   74.049972] 	***[MYSCHED] dequeue: success cpu=1, nr_running=3, pid=1879
+[   74.049983] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1879, next_p->pid=1877, 					nr_running=3
+[   74.050087] 	***[MYSCHED] dequeue: success cpu=1, nr_running=2, pid=1877
+[   74.050097] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1877, next_p->pid=1878, 					nr_running=2
+[   74.050245] 	***[MYSCHED] dequeue: success cpu=1, nr_running=1, pid=1878
+[   74.050257] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1878, next_p->pid=1880, 					nr_running=1
+[   74.050360] 	***[MYSCHED] dequeue: success cpu=1, nr_running=0, pid=1880
+[   74.050370] 	***[MYSCHED] put_prev_task: do nothing, p->pid=1880
+[   75.049009] ***[MYSCHED] enqueue: success cpu=1, nr_running=1, pid=1879
+[   75.049065] ***[MYSCHED] enqueue: success cpu=1, nr_running=2, pid=1877
+[   75.049222] ***[MYSCHED] enqueue: success cpu=1, nr_running=3, pid=1878
+[   75.049332] ***[MYSCHED] enqueue: success cpu=1, nr_running=4, pid=1880
+[   75.257883] ***[MYSCHED] pick_next_task: other class came in..						  prev->pid=10
+[   75.257889] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=10, next_p->pid=1879, 					nr_running=4
+[   75.257933] 	***[MYSCHED] dequeue: success cpu=1, nr_running=3, pid=1879
+[   75.257937] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1879, next_p->pid=1877, 					nr_running=3
+[   75.257978] 	***[MYSCHED] dequeue: success cpu=1, nr_running=2, pid=1877
+[   75.257982] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1877, next_p->pid=1878, 					nr_running=2
+[   75.258022] 	***[MYSCHED] dequeue: success cpu=1, nr_running=1, pid=1878
+[   75.258026] 	***[MYSCHED] pick_next_task: cpu=1, prev->pid=1878, next_p->pid=1880, 					nr_running=1
+[   75.258114] 	***[MYSCHED] put_prev_task: do nothing, p->pid=1880
