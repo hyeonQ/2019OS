@@ -1,0 +1,405 @@
+[    0.000000] ***[MYSTRD] Mystride class is online 
+[    0.000000] ***[MYSTRD] Mystride class is online 
+[    0.000000] ***[MYSTRD] Mystride class is online 
+[    0.000000] ***[MYSTRD] Mystride class is online 
+[   55.626730] ***[MYSTRD] init_task_mystrd: ticket=10, stride=100, pass=100, p->pid=1951
+[   55.626737] ***[MYSTRD] enqueue: success cpu=0, nr_running=1, pid=1951
+[   55.626744] 	***[MYSTRD] pick_next_task: cpu=0, prev->pid=1951, next_p->pid=1951, nr_running=1
+[   55.626751] 	***[MYSTRD] put_prev_task: do nothing, p->pid=1951
+[   55.626758] 	***[MYSTRD] dequeue: success cpu=0, nr_running=0, pid=1951
+[   55.626763] ***[MYSTRD] enqueue: success cpu=1, nr_running=1, pid=1951
+[   55.626845] ***[MYSTRD] pick_next_task: other class came in.. prev->pid=0
+[   55.626848] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1951, nr_running=1
+[   55.627415] ***[MYSTRD] update_curr: update_curr starting!
+[   55.627421] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=200
+[   55.627424] ***[MYSTRD] update_curr: update_curr end!
+[   55.627495] ***[MYSTRD] init_task_mystrd: ticket=20, stride=50, pass=50, p->pid=1950
+[   55.627499] ***[MYSTRD] enqueue: success cpu=0, nr_running=1, pid=1950
+[   55.627522] 	***[MYSTRD] pick_next_task: cpu=0, prev->pid=1950, next_p->pid=1950, nr_running=1
+[   55.627526] 	***[MYSTRD] put_prev_task: do nothing, p->pid=1950
+[   55.627531] 	***[MYSTRD] dequeue: success cpu=0, nr_running=0, pid=1950
+[   55.627535] ***[MYSTRD] enqueue: success cpu=1, nr_running=2, pid=1950
+[   55.628450] ***[MYSTRD] update_curr: update_curr starting!
+[   55.628454] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=300
+[   55.628457] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50<6>[   55.628460] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   55.628463] ***[MYSTRD] update_curr: update_curr end!
+[   55.628477] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=2
+[   55.628484] 	***[MYSTRD] dequeue: success cpu=1, nr_running=1, pid=1951
+[   55.628486] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1950, nr_running=1
+[   55.629102] ***[MYSTRD] init_task_mystrd: ticket=40, stride=25, pass=25, p->pid=1949
+[   55.629106] ***[MYSTRD] enqueue: success cpu=0, nr_running=1, pid=1949
+[   55.629110] 	***[MYSTRD] pick_next_task: cpu=0, prev->pid=1949, next_p->pid=1949, nr_running=1
+[   55.629115] 	***[MYSTRD] put_prev_task: do nothing, p->pid=1949
+[   55.629119] 	***[MYSTRD] dequeue: success cpu=0, nr_running=0, pid=1949
+[   55.629123] ***[MYSTRD] enqueue: success cpu=1, nr_running=2, pid=1949
+[   55.629407] 	***[MYSTRD] dequeue: success cpu=1, nr_running=1, pid=1950
+[   55.629410] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1949, nr_running=1
+[   55.629444] ***[MYSTRD] update_curr: update_curr starting!
+[   55.629447] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=50
+[   55.629449] ***[MYSTRD] update_curr: update_curr end!
+[   55.630123] 	***[MYSTRD] dequeue: success cpu=1, nr_running=0, pid=1949
+[   55.630126] 	***[MYSTRD] put_prev_task: do nothing, p->pid=1949
+[   67.218197] ***[MYSTRD] enqueue: success cpu=1, nr_running=1, pid=1951
+[   67.219177] ***[MYSTRD] enqueue: success cpu=1, nr_running=2, pid=1950
+[   67.219197] ***[MYSTRD] enqueue: success cpu=1, nr_running=3, pid=1949
+[   67.223226] ***[MYSTRD] pick_next_task: other class came in.. prev->pid=0
+[   67.223231] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1951, nr_running=3
+[   67.224556] ***[MYSTRD] update_curr: update_curr starting!
+[   67.224598] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=400
+[   67.224637] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.224703] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.224731] ***[MYSTRD] update_curr: update_curr end!
+[   67.224854] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.225191] ***[MYSTRD] update_curr: update_curr starting!
+[   67.225195] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=500
+[   67.225199] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.225205] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.225209] ***[MYSTRD] update_curr: update_curr end!
+[   67.225223] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.226182] ***[MYSTRD] update_curr: update_curr starting!
+[   67.226186] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=600
+[   67.226189] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.226195] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.226199] ***[MYSTRD] update_curr: update_curr end!
+[   67.226212] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.228143] ***[MYSTRD] update_curr: update_curr starting!
+[   67.228216] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=700
+[   67.228316] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.228464] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.228519] ***[MYSTRD] update_curr: update_curr end!
+[   67.228726] ***[MYSTRD] update_curr: update_curr starting!
+[   67.228738] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=800
+[   67.228755] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.228776] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.228782] ***[MYSTRD] update_curr: update_curr end!
+[   67.228804] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.229167] ***[MYSTRD] update_curr: update_curr starting!
+[   67.229170] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=900
+[   67.229174] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.229180] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.229183] ***[MYSTRD] update_curr: update_curr end!
+[   67.229201] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.231341] ***[MYSTRD] update_curr: update_curr starting!
+[   67.231432] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=1000
+[   67.231507] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.231617] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.231659] ***[MYSTRD] update_curr: update_curr end!
+[   67.231794] ***[MYSTRD] update_curr: update_curr starting!
+[   67.231806] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=1100
+[   67.231815] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.231835] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.231840] ***[MYSTRD] update_curr: update_curr end!
+[   67.231867] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.232165] ***[MYSTRD] update_curr: update_curr starting!
+[   67.232169] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=1200
+[   67.232172] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.232178] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.232182] ***[MYSTRD] update_curr: update_curr end!
+[   67.232197] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.234321] ***[MYSTRD] update_curr: update_curr starting!
+[   67.234400] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=1300
+[   67.234464] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.234559] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.234594] ***[MYSTRD] update_curr: update_curr end!
+[   67.234711] ***[MYSTRD] update_curr: update_curr starting!
+[   67.234721] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=1400
+[   67.234730] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.234749] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.234756] ***[MYSTRD] update_curr: update_curr end!
+[   67.234780] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.235163] ***[MYSTRD] update_curr: update_curr starting!
+[   67.235167] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=1500
+[   67.235170] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.235176] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.235179] ***[MYSTRD] update_curr: update_curr end!
+[   67.235194] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.236885] ***[MYSTRD] update_curr: update_curr starting!
+[   67.236962] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=1600
+[   67.237031] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.237150] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.237202] ***[MYSTRD] update_curr: update_curr end!
+[   67.237422] ***[MYSTRD] update_curr: update_curr starting!
+[   67.237449] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=1700
+[   67.237474] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.237525] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.237543] ***[MYSTRD] update_curr: update_curr end!
+[   67.237611] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.238168] ***[MYSTRD] update_curr: update_curr starting!
+[   67.238171] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=1800
+[   67.238174] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.238179] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.238182] ***[MYSTRD] update_curr: update_curr end!
+[   67.238195] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.239847] ***[MYSTRD] update_curr: update_curr starting!
+[   67.239921] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=1900
+[   67.239987] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.240101] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.240151] ***[MYSTRD] update_curr: update_curr end!
+[   67.240373] ***[MYSTRD] update_curr: update_curr starting!
+[   67.240398] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=2000
+[   67.240420] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.240466] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.240501] ***[MYSTRD] update_curr: update_curr end!
+[   67.240566] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.241182] ***[MYSTRD] update_curr: update_curr starting!
+[   67.241186] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=2100
+[   67.241189] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.241194] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.241196] ***[MYSTRD] update_curr: update_curr end!
+[   67.241209] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.242596] ***[MYSTRD] update_curr: update_curr starting!
+[   67.242659] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=2200
+[   67.242699] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.242768] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.242797] ***[MYSTRD] update_curr: update_curr end!
+[   67.242896] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.243186] ***[MYSTRD] update_curr: update_curr starting!
+[   67.243189] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=2300
+[   67.243192] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.243197] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.243199] ***[MYSTRD] update_curr: update_curr end!
+[   67.243211] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.244182] ***[MYSTRD] update_curr: update_curr starting!
+[   67.244185] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=2400
+[   67.244188] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.244208] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.244210] ***[MYSTRD] update_curr: update_curr end!
+[   67.244237] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.245719] ***[MYSTRD] update_curr: update_curr starting!
+[   67.245787] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=2500
+[   67.245849] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.245955] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.246023] ***[MYSTRD] update_curr: update_curr end!
+[   67.246156] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.246528] ***[MYSTRD] update_curr: update_curr starting!
+[   67.246573] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=2600
+[   67.246615] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.246686] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.246716] ***[MYSTRD] update_curr: update_curr end!
+[   67.246807] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.247425] ***[MYSTRD] update_curr: update_curr starting!
+[   67.247470] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=2700
+[   67.247511] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.247582] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.247612] ***[MYSTRD] update_curr: update_curr end!
+[   67.247703] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.248484] ***[MYSTRD] update_curr: update_curr starting!
+[   67.248526] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=2800
+[   67.248563] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.248628] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.248656] ***[MYSTRD] update_curr: update_curr end!
+[   67.248741] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.249402] ***[MYSTRD] update_curr: update_curr starting!
+[   67.249445] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=2900
+[   67.249483] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50
+[   67.249548] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.249577] ***[MYSTRD] update_curr: update_curr end!
+[   67.249661] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1951, nr_running=3
+[   67.250202] 	***[MYSTRD] dequeue: success cpu=1, nr_running=2, pid=1951
+[   67.250291] 	***[MYSTRD] put_prev_task: do nothing, p->pid=1951
+[   67.250442] ***[MYSTRD] enqueue: success cpu=1, nr_running=3, pid=1951
+[   67.250767] ***[MYSTRD] update_curr: update_curr starting!
+[   67.250804] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1950, pass=50
+[   67.250837] 		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1949, pass=50		***[MYSTRD] update_curr: curr->pid=1951, p->pid=1951, pass=3000
+[   67.250894] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.250919] ***[MYSTRD] update_curr: update_curr end!
+[   67.250998] 	***[MYSTRD] dequeue: success cpu=1, nr_running=2, pid=1951
+[   67.251015] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1951, next_p->pid=1950, nr_running=2
+[   67.251236] ***[MYSTRD] update_curr: update_curr starting!
+[   67.251239] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=100
+[   67.251242] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.251244] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.251247] ***[MYSTRD] update_curr: update_curr end!
+[   67.251263] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.252166] ***[MYSTRD] update_curr: update_curr starting!
+[   67.252169] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=150
+[   67.252171] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.252173] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.252176] ***[MYSTRD] update_curr: update_curr end!
+[   67.252188] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.253732] ***[MYSTRD] update_curr: update_curr starting!
+[   67.253785] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=200
+[   67.253833] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.253895] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.253934] ***[MYSTRD] update_curr: update_curr end!
+[   67.254086] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.254178] ***[MYSTRD] update_curr: update_curr starting!
+[   67.254185] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=250
+[   67.254190] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.254196] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.254201] ***[MYSTRD] update_curr: update_curr end!
+[   67.254216] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.255594] ***[MYSTRD] update_curr: update_curr starting!
+[   67.255653] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=300
+[   67.255706] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.255753] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.255810] ***[MYSTRD] update_curr: update_curr end!
+[   67.255935] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.256674] ***[MYSTRD] update_curr: update_curr starting!
+[   67.256731] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=350
+[   67.256782] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.256829] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.256884] ***[MYSTRD] update_curr: update_curr end!
+[   67.257023] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.257174] ***[MYSTRD] update_curr: update_curr starting!
+[   67.257177] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=400
+[   67.257180] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.257182] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.257185] ***[MYSTRD] update_curr: update_curr end!
+[   67.257198] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.258590] ***[MYSTRD] update_curr: update_curr starting!
+[   67.258658] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=450
+[   67.258706] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.258750] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.258808] ***[MYSTRD] update_curr: update_curr end!
+[   67.258956] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.259197] ***[MYSTRD] update_curr: update_curr starting!
+[   67.259199] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=500
+[   67.259202] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.259204] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.259224] ***[MYSTRD] update_curr: update_curr end!
+[   67.259235] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.260489] ***[MYSTRD] update_curr: update_curr starting!
+[   67.260533] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=550
+[   67.260572] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.260608] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.260640] ***[MYSTRD] update_curr: update_curr end!
+[   67.260735] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.261845] ***[MYSTRD] update_curr: update_curr starting!
+[   67.261886] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=600
+[   67.261911] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.261933] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.261953] ***[MYSTRD] update_curr: update_curr end!
+[   67.262043] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.262169] ***[MYSTRD] update_curr: update_curr starting!
+[   67.262171] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=650
+[   67.262174] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.262177] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.262179] ***[MYSTRD] update_curr: update_curr end!
+[   67.262193] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.263507] ***[MYSTRD] update_curr: update_curr starting!
+[   67.263556] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=700
+[   67.263600] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.263641] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.263677] ***[MYSTRD] update_curr: update_curr end!
+[   67.263783] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.264575] ***[MYSTRD] update_curr: update_curr starting!
+[   67.264620] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=750
+[   67.264695] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.264769] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.264827] ***[MYSTRD] update_curr: update_curr end!
+[   67.264916] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.265159] ***[MYSTRD] update_curr: update_curr starting!
+[   67.265162] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=800
+[   67.265165] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.265167] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.265170] ***[MYSTRD] update_curr: update_curr end!
+[   67.265181] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.266528] ***[MYSTRD] update_curr: update_curr starting!
+[   67.266568] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=850
+[   67.266605] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.266638] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.266668] ***[MYSTRD] update_curr: update_curr end!
+[   67.266756] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.267441] ***[MYSTRD] update_curr: update_curr starting!
+[   67.267502] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=900
+[   67.267544] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.267583] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.267618] ***[MYSTRD] update_curr: update_curr end!
+[   67.267719] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.268502] ***[MYSTRD] update_curr: update_curr starting!
+[   67.268562] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=950
+[   67.268599] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.268632] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.268663] ***[MYSTRD] update_curr: update_curr end!
+[   67.268761] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.269402] ***[MYSTRD] update_curr: update_curr starting!
+[   67.269446] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=1000
+[   67.269486] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.269522] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.269555] ***[MYSTRD] update_curr: update_curr end!
+[   67.269649] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.270445] ***[MYSTRD] update_curr: update_curr starting!
+[   67.270484] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=1050
+[   67.270518] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.270550] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.270578] ***[MYSTRD] update_curr: update_curr end!
+[   67.270662] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.271397] ***[MYSTRD] update_curr: update_curr starting!
+[   67.271438] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=1100
+[   67.271475] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.271508] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.271538] ***[MYSTRD] update_curr: update_curr end!
+[   67.271627] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.272460] ***[MYSTRD] update_curr: update_curr starting!
+[   67.272497] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=1150
+[   67.272530] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.272559] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.272587] ***[MYSTRD] update_curr: update_curr end!
+[   67.272666] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.273365] ***[MYSTRD] update_curr: update_curr starting!
+[   67.273417] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=1200
+[   67.273452] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50<6>[   67.273484] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.273512] ***[MYSTRD] update_curr: update_curr end!
+[   67.273596] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1950, nr_running=2
+[   67.274141] 	***[MYSTRD] dequeue: success cpu=1, nr_running=1, pid=1950
+[   67.274143] 	***[MYSTRD] put_prev_task: do nothing, p->pid=1950
+[   67.274148] ***[MYSTRD] enqueue: success cpu=1, nr_running=2, pid=1950
+[   67.274174] ***[MYSTRD] update_curr: update_curr starting!
+[   67.274194] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1949, pass=50
+[   67.274197] 		***[MYSTRD] update_curr: curr->pid=1950, p->pid=1950, pass=1250<6>[   67.274199] 	***[MYSTRD] update_curr: curr doesn't have minimum pass
+[   67.274202] ***[MYSTRD] update_curr: update_curr end!
+[   67.274215] 	***[MYSTRD] dequeue: success cpu=1, nr_running=1, pid=1950
+[   67.274236] 	***[MYSTRD] pick_next_task: cpu=1, prev->pid=1950, next_p->pid=1949, nr_running=1
+[   67.275162] ***[MYSTRD] update_curr: update_curr starting!
+[   67.275165] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=75
+[   67.275167] ***[MYSTRD] update_curr: update_curr end!
+[   67.276959] ***[MYSTRD] update_curr: update_curr starting!
+[   67.277030] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=100
+[   67.277093] ***[MYSTRD] update_curr: update_curr end!
+[   67.277399] ***[MYSTRD] update_curr: update_curr starting!
+[   67.277431] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=125
+[   67.277459] ***[MYSTRD] update_curr: update_curr end!
+[   67.278622] ***[MYSTRD] update_curr: update_curr starting!
+[   67.278703] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=150
+[   67.278775] ***[MYSTRD] update_curr: update_curr end!
+[   67.279813] ***[MYSTRD] update_curr: update_curr starting!
+[   67.279890] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=175
+[   67.279960] ***[MYSTRD] update_curr: update_curr end!
+[   67.280185] ***[MYSTRD] update_curr: update_curr starting!
+[   67.280188] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=200
+[   67.280195] ***[MYSTRD] update_curr: update_curr end!
+[   67.281728] ***[MYSTRD] update_curr: update_curr starting!
+[   67.281803] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=225
+[   67.281871] ***[MYSTRD] update_curr: update_curr end!
+[   67.283441] ***[MYSTRD] update_curr: update_curr starting!
+[   67.283572] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=250
+[   67.283662] ***[MYSTRD] update_curr: update_curr end!
+[   67.283941] ***[MYSTRD] update_curr: update_curr starting!
+[   67.283973] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=275
+[   67.283990] ***[MYSTRD] update_curr: update_curr end!
+[   67.284137] ***[MYSTRD] update_curr: update_curr starting!
+[   67.284140] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=300
+[   67.284142] ***[MYSTRD] update_curr: update_curr end!
+[   67.285142] ***[MYSTRD] update_curr: update_curr starting!
+[   67.285145] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=325
+[   67.285160] ***[MYSTRD] update_curr: update_curr end!
+[   67.286816] ***[MYSTRD] update_curr: update_curr starting!
+[   67.286881] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=350
+[   67.286939] ***[MYSTRD] update_curr: update_curr end!
+[   67.287171] ***[MYSTRD] update_curr: update_curr starting!
+[   67.287178] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=375
+[   67.287183] ***[MYSTRD] update_curr: update_curr end!
+[   67.288629] ***[MYSTRD] update_curr: update_curr starting!
+[   67.288698] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=400
+[   67.288791] ***[MYSTRD] update_curr: update_curr end!
+[   67.290311] ***[MYSTRD] update_curr: update_curr starting!
+[   67.290412] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=425
+[   67.290493] ***[MYSTRD] update_curr: update_curr end!
+[   67.290746] ***[MYSTRD] update_curr: update_curr starting!
+[   67.290767] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=450
+[   67.290784] ***[MYSTRD] update_curr: update_curr end!
+[   67.291127] ***[MYSTRD] update_curr: update_curr starting!
+[   67.291129] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=475
+[   67.291132] ***[MYSTRD] update_curr: update_curr end!
+[   67.293300] ***[MYSTRD] update_curr: update_curr starting!
+[   67.293380] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=500
+[   67.293445] ***[MYSTRD] update_curr: update_curr end!
+[   67.293648] ***[MYSTRD] update_curr: update_curr starting!
+[   67.293665] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=525
+[   67.293679] ***[MYSTRD] update_curr: update_curr end!
+[   67.294123] ***[MYSTRD] update_curr: update_curr starting!
+[   67.294125] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=550
+[   67.294128] ***[MYSTRD] update_curr: update_curr end!
+[   67.295636] ***[MYSTRD] update_curr: update_curr starting!
+[   67.295714] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=575
+[   67.295762] ***[MYSTRD] update_curr: update_curr end!
+[   67.296169] ***[MYSTRD] update_curr: update_curr starting!
+[   67.296172] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=600
+[   67.296175] ***[MYSTRD] update_curr: update_curr end!
+[   67.297117] ***[MYSTRD] update_curr: update_curr starting!
+[   67.297121] 		***[MYSTRD] update_curr: curr->pid=1949, p->pid=1949, pass=625
+[   67.297122] ***[MYSTRD] update_curr: update_curr end!
+[   67.297766] 	***[MYSTRD] dequeue: success cpu=1, nr_running=0, pid=1949
+[   67.297769] 	***[MYSTRD] put_prev_task: do nothing, p->pid=1949
+[   67.297773] ***[MYSTRD] enqueue: success cpu=1, nr_running=1, pid=1949
+[   67.297780] 	***[MYSTRD] dequeue: success cpu=1, nr_running=0, pid=1949
+[   67.297783] 	***[MYSTRD] put_prev_task: do nothing, p->pid=1949
