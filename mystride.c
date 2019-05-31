@@ -32,37 +32,43 @@ static void update_curr_mystride(struct rq *rq)
 	struct list_head *curptr = &cur->mystride.run_list;
 	struct sched_mystride_entity *pos_se = NULL;
 	unsigned int is_resched = 0;
+	int i, min_pass_idx = 0, min_pass;
 
 	printk(KERN_INFO "***[MYSTRD] update_curr: update_curr starting!\n");
 		
 	// update curr tasks' pass and make mystride_rq sorted by pass
 	cur->mystride.pass += cur->mystride.stride;
 	
-	for(pos = rq->mystride.queue.next; pos != &rq->mystride.queue; pos = pos->next){
+	min_pass = cur->mystride.pass;
+	pos = &mystride_rq->queue;
+
+	for(i=0; i<mystride_rq->nr_running; i++){
+		pos = pos->next;
 		pos_se = container_of(pos, struct sched_mystride_entity, run_list);
 		pos_p = container_of(pos_se, struct task_struct, mystride);
-		printk(KERN_INFO "\t\t***[MYSTRD] update_curr: curr->pid=%d, p->pid=%d, pass=%d",
-							cur->pid, pos_p->pid, pos_se->pass);
-		if(cur->pid == pos_p->pid)
-			continue;
-		else if(cur->mystride.pass > pos_se->pass){
-			is_resched = 1;	
-		} else {
-			if(!is_resched) break;
-			else {
-				head->next = curptr;
-				curptr->next->prev = head;
-				curptr->next = pos;
-				pos->prev->next = curptr;
-				curptr->prev = pos->prev;
-				pos->prev = curptr;
-			}
+		
+		printk(KERN_INFO "\t\t***[MYSTRD] update_curr: curr->pid=%d, pass=%d, p->pid=%d, pass=%d\n",
+							cur->pid, cur->mystride.pass, pos_p->pid, pos_se->pass);
+			
+		if(min_pass > pos_se->pass){
+			min_pass = pos_se->pass;
+			min_pass_idx = i;
+			is_resched = 1;
 		}
-
 	}
+
 	//if any task has smaller pass than curr task's pass
 	if(is_resched){
 		printk(KERN_INFO "\t***[MYSTRD] update_curr: curr doesn't have minimum pass\n");
+		
+		for(i=0; i<min_pass_idx; i++){
+			pos = mystride_rq->queue.next;
+			pos_se = container_of(pos, struct sched_mystride_entity, run_list);
+			
+			list_del_init(&pos_se->run_list);
+			list_add_tail(&pos_se->run_list, &mystride_rq->queue);
+		}
+
 		resched_curr(rq);
 	}
 	printk(KERN_INFO "***[MYSTRD] update_curr: update_curr end!\n");
