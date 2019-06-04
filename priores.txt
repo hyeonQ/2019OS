@@ -1,0 +1,89 @@
+[    0.000000] ***[MYPRIO] Mypriority class is online 
+[    0.000000] ***[MYPRIO] Mypriority class is online 
+[    0.000000] ***[MYPRIO] Mypriority class is online 
+[    0.000000] ***[MYPRIO] Mypriority class is online 
+[  210.395208] ***[MYPRIO] init_task_myprio: priority=30, p->pid=1968
+[  210.395215] ***[MYPRIO] enqueue first one: success cpu=0, nr_running=0, pid=1968
+[  210.395222] 	***[MYPRIO] pick_next_task: show queue
+[  210.395226] 		***[MYPRIO] pick_next_task: pos->pid=1968, pos->prio=30, age=0
+[  210.395230] 	***[MYPRIO] pick_next_task: cpu=0, prev->pid=1968, next_p->pid=1968, nr_running=1, next_se->prio=30
+[  210.395238] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1968
+[  210.395244] 	***[MYPRIO] dequeue: success cpu=0, nr_running=0, pid=1968
+[  210.395250] ***[MYPRIO] enqueue first one: success cpu=1, nr_running=0, pid=1968
+[  210.395349] ***[MYPRIO] pick_next_task: other class came in.. prev->pid=0
+[  210.395354] 	***[MYPRIO] pick_next_task: show queue
+[  210.395358] 		***[MYPRIO] pick_next_task: pos->pid=1968, pos->prio=30, age=0
+[  210.395363] 	***[MYPRIO] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1968, nr_running=1, next_se->prio=30
+[  210.395388] 	***[MYPRIO] dequeue: success cpu=1, nr_running=0, pid=1968
+[  210.395401] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1968
+[  210.395560] ***[MYPRIO] enqueue first one: success cpu=1, nr_running=0, pid=1968
+[  210.395566] ***[MYPRIO] pick_next_task: other class came in.. prev->pid=0
+[  210.395570] 	***[MYPRIO] pick_next_task: show queue
+[  210.395574] 		***[MYPRIO] pick_next_task: pos->pid=1968, pos->prio=30, age=0
+[  210.395595] 	***[MYPRIO] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1968, nr_running=1, next_se->prio=30
+[  210.395612] 	***[MYPRIO] dequeue: success cpu=1, nr_running=0, pid=1968
+[  210.395616] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1968
+[  210.395921] ***[MYPRIO] init_task_myprio: priority=20, p->pid=1967
+[  210.395928] ***[MYPRIO] enqueue first one: success cpu=0, nr_running=0, pid=1967
+[  210.395934] 	***[MYPRIO] pick_next_task: show queue
+[  210.395938] 		***[MYPRIO] pick_next_task: pos->pid=1967, pos->prio=20, age=0
+[  210.395943] 	***[MYPRIO] pick_next_task: cpu=0, prev->pid=1967, next_p->pid=1967, nr_running=1, next_se->prio=20
+[  210.395950] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1967
+[  210.395957] 	***[MYPRIO] dequeue: success cpu=0, nr_running=0, pid=1967
+[  210.395962] ***[MYPRIO] enqueue first one: success cpu=1, nr_running=0, pid=1967
+[  210.396092] ***[MYPRIO] pick_next_task: other class came in.. prev->pid=0
+[  210.396097] 	***[MYPRIO] pick_next_task: show queue
+[  210.396102] 		***[MYPRIO] pick_next_task: pos->pid=1967, pos->prio=20, age=0
+[  210.396106] 	***[MYPRIO] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1967, nr_running=1, next_se->prio=20
+[  210.396129] 	***[MYPRIO] dequeue: success cpu=1, nr_running=0, pid=1967
+[  210.396143] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1967
+[  210.396288] ***[MYPRIO] enqueue first one: success cpu=1, nr_running=0, pid=1967
+[  210.396317] ***[MYPRIO] pick_next_task: other class came in.. prev->pid=0
+[  210.396321] 	***[MYPRIO] pick_next_task: show queue
+[  210.396324] 		***[MYPRIO] pick_next_task: pos->pid=1967, pos->prio=20, age=0
+[  210.396329] 	***[MYPRIO] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1967, nr_running=1, next_se->prio=20
+[  210.396360] 	***[MYPRIO] dequeue: success cpu=1, nr_running=0, pid=1967
+[  210.396374] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1967
+[  210.396476] ***[MYPRIO] init_task_myprio: priority=40, p->pid=1966
+[  210.396483] ***[MYPRIO] enqueue first one: success cpu=0, nr_running=0, pid=1966
+[  210.396490] 	***[MYPRIO] pick_next_task: show queue
+[  210.396494] 		***[MYPRIO] pick_next_task: pos->pid=1966, pos->prio=40, age=0
+[  210.396504] 	***[MYPRIO] pick_next_task: cpu=0, prev->pid=1966, next_p->pid=1966, nr_running=1, next_se->prio=40
+[  210.396512] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1966
+[  210.396519] 	***[MYPRIO] dequeue: success cpu=0, nr_running=0, pid=1966
+[  210.396525] ***[MYPRIO] enqueue first one: success cpu=1, nr_running=0, pid=1966
+[  210.396625] ***[MYPRIO] pick_next_task: other class came in.. prev->pid=0
+[  210.396629] 	***[MYPRIO] pick_next_task: show queue
+[  210.396634] 		***[MYPRIO] pick_next_task: pos->pid=1966, pos->prio=40, age=0
+[  210.396638] 	***[MYPRIO] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1966, nr_running=1, next_se->prio=40
+[  210.396666] 	***[MYPRIO] dequeue: success cpu=1, nr_running=0, pid=1966
+[  210.396670] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1966
+[  224.084335] ***[MYPRIO] enqueue first one: success cpu=1, nr_running=0, pid=1968
+[  224.084344] ***[MYPRIO] enqueue to tail: success cpu=1, nr_running=1, pid=1967
+[  224.084351] ***[MYPRIO] enqueue to head: success cpu=1, nr_running=2, pid=1966
+[  224.084529] ***[MYPRIO] pick_next_task: other class came in.. prev->pid=0
+[  224.084533] 	***[MYPRIO] pick_next_task: show queue
+[  224.084537] 		***[MYPRIO] pick_next_task: pos->pid=1966, pos->prio=40, age=0
+[  224.084540] 		***[MYPRIO] pick_next_task: pos->pid=1968, pos->prio=30, age=0
+[  224.084544] 		***[MYPRIO] pick_next_task: pos->pid=1967, pos->prio=20, age=0
+[  224.084549] 	***[MYPRIO] pick_next_task: cpu=1, prev->pid=0, next_p->pid=1966, nr_running=3, next_se->prio=40
+[  224.114056] 	***[MYPRIO] dequeue: success cpu=1, nr_running=2, pid=1966
+[  224.114102] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1966
+[  224.114178] ***[MYPRIO] enqueue to head: success cpu=1, nr_running=2, pid=1966
+[  224.114273] 	***[MYPRIO] dequeue: success cpu=1, nr_running=2, pid=1966
+[  224.114299] 	***[MYPRIO] pick_next_task: show queue
+[  224.114323] 		***[MYPRIO] pick_next_task: pos->pid=1968, pos->prio=30, age=0
+[  224.114345] 		***[MYPRIO] pick_next_task: pos->pid=1967, pos->prio=20, age=0
+[  224.114365] 	***[MYPRIO] pick_next_task: cpu=1, prev->pid=1966, next_p->pid=1968, nr_running=2, next_se->prio=30
+[  224.143519] 	***[MYPRIO] dequeue: success cpu=1, nr_running=1, pid=1968
+[  224.143577] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1968
+[  224.143675] ***[MYPRIO] enqueue to head: success cpu=1, nr_running=1, pid=1968
+[  224.143943] 	***[MYPRIO] dequeue: success cpu=1, nr_running=1, pid=1968
+[  224.143965] 	***[MYPRIO] pick_next_task: show queue
+[  224.143993] 		***[MYPRIO] pick_next_task: pos->pid=1967, pos->prio=20, age=0
+[  224.144011] 	***[MYPRIO] pick_next_task: cpu=1, prev->pid=1968, next_p->pid=1967, nr_running=1, next_se->prio=20
+[  224.175150] 	***[MYPRIO] dequeue: success cpu=1, nr_running=0, pid=1967
+[  224.175191] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1967
+[  224.175259] ***[MYPRIO] enqueue first one: success cpu=1, nr_running=0, pid=1967
+[  224.175320] 	***[MYPRIO] dequeue: success cpu=1, nr_running=0, pid=1967
+[  224.175346] 	***[MYPRIO] put_prev_task: do nothing, p->pid=1967
