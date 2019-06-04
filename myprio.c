@@ -79,21 +79,32 @@ static void enqueue_task_myprio(struct rq *rq, struct task_struct *p, int flags)
 	struct myprio_rq *myprio_rq = &rq->myprio;
 	struct sched_myprio_entity *front_se = NULL;
 
+	struct list_head *pos = NULL;
+	struct task_struct *pos_p = NULL;
+	struct sched_myprio_entity *pos_se = NULL;
+	
+	int is_enqueued=0;
 	// TODO
 	if(!rq->myprio.nr_running){
 		printk(KERN_INFO "***[MYPRIO] enqueue first one: success cpu=%d, nr_running=%d, pid=%d\n",
 				cpu_of(rq), rq->myprio.nr_running, p->pid);
 		list_add_tail(&p->myprio.run_list, &rq->myprio.queue);
 	} else {
-		front_se = container_of(myprio_rq->queue.next, struct sched_myprio_entity, run_list);
-		if(front_se->prio >= p->myprio.prio){
-			printk(KERN_INFO "***[MYPRIO] enqueue to tail: success cpu=%d, nr_running=%d, pid=%d\n",
-				cpu_of(rq), rq->myprio.nr_running, p->pid);
-			list_add_tail(&p->myprio.run_list, &rq->myprio.queue);
-		} else {
-			printk(KERN_INFO "***[MYPRIO] enqueue to head: success cpu=%d, nr_running=%d, pid=%d\n",
-				cpu_of(rq), rq->myprio.nr_running, p->pid);
-			list_add(&p->myprio.run_list, &rq->myprio.queue);	
+		for(pos = myprio_rq->queue.next; pos != &myprio_rq->queue; pos = pos->next){
+			pos_se = container_of(pos, struct sched_myprio_entity, run_list);
+			pos_p = container_of(pos_se, struct task_struct, myprio);
+
+			if(p->myprio.prio > pos_se->prio) {
+				printk(KERN_INFO "***[MYPRIO] enqueue middle of queue: success cpu=%d, \
+				nr_running=%d, pid=%d, next_prio=%d\n",
+				 cpu_of(rq), myprio_rq->nr_running, p->pid, pos_se->prio);
+				__list_add(&p->myprio.run_list, pos->prev, pos);
+				is_enqueued=1;
+				break;
+			}
+		}
+		if(!is_enqueued){
+			list_add_tail(&p->myprio.run_list, &myprio_rq->queue);
 		}
 	}
 	rq->myprio.nr_running++;
